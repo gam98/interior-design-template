@@ -1,0 +1,291 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+}
+.sidebar{
+    top: 0;
+    z-index: 3;
+    width: 300px;
+    background: #f44336;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+    padding: 0 16px;
+}
+.container{
+    padding: 0.01em 16px;
+}
+.Comp-name{
+    padding: 64px 0;
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+}
+.lists ul li{
+    list-style: none;
+}
+.lists ul li a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+    /* border: 1px solid #000; */
+}
+.lists ul li a:hover{
+    background: #fff;
+    color: #000;
+}
+.main{
+    margin-left: 340px;
+    margin-right: 40px;
+    transition: margin-left .4s;
+}
+.main .header{
+    margin-top: 80px;
+    padding: 0.01em 16px;
+}
+.main .header h1,
+.main .header h2{
+    margin: 10px 0;
+}
+.main .header h1{
+    font-size: 64px;
+    font-weight: 400;
+}
+.main .header h2{
+    color: #f44336;
+    font-size: 48px;
+}
+.main .header hr{
+    width: 50px;
+    border: 5px solid red;
+    border-radius: 4px;
+    margin: 20px 0;
+    box-sizing: content-box;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 352px 237px 237px;
+    grid-gap: 10px 18px;
+    padding: 0.1em 16px;
+}
+.grid .one-left{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background: url(img/kitchenconcrete.jpg) no-repeat center center/cover;
+    width: 100%;
+    
+}
+.grid .two-left{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background: url(img/livingroom.jpg) no-repeat center center/cover;
+    width: 100%;
+    
+}
+.grid .three-left{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    background: url(img/diningroom.jpg) no-repeat center center/cover;
+    width: 100%;
+    
+}
+.grid .one-right{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background: url(img/atrium.jpg) no-repeat center center/cover;
+    width: 100%;
+    
+}
+.grid .two-right{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background: url(img/bedroom.jpg) no-repeat center center/cover;
+    width: 100%;
+    
+}
+.grid .three-right{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    background: url(img/livingroom2.jpg) no-repeat center center/cover;
+    width: 100%;
+}
+.main .services,
+.main .designers,
+.main .packages,
+.main .contact{
+    margin-top: 75px;
+    padding: 0.1em 16px;
+}
+.main .services h2,
+.main .designers h2,
+.main .packages h2,
+.main .contact h2{
+    color:#f44336;
+    font-size: 48px;
+}
+.main .services hr,
+.main .designers hr,
+.main .packages hr,
+.main .contact hr{
+    width: 50px;
+    border: 5px solid red;
+    border-radius: 4px;
+    margin: 20px 0;
+    box-sizing: content-box;
+}
+.main .services p,
+.main .designers p,
+.main .packages p,
+.main .contact p{
+    margin: 16px 0;
+}
+.main .team-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 18px;
+    padding: 0.1em 16px;
+}
+
+.team-grid .team-left img,
+.team-grid .team-center img,
+.team-grid .team-right img{
+    width: 100%;
+}
+.team-grid .team-left .bgcolor,
+.team-grid .team-center .bgcolor,
+.team-grid .team-right .bgcolor{
+    background: #f1f1f1;
+}
+.team-grid .team-left .info,
+.team-grid .team-center .info,
+.team-grid .team-right .info{
+    padding: 0.1em 16px;
+}
+.team-grid .team-left .info h3,
+.team-grid .team-center .info h3,
+.team-grid .team-right .info h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 24px;
+}
+.info p:first-of-type
+{
+    margin: 16px 0;
+    opacity: 0.60;
+    font-size: 16px;
+}
+.info p{
+    margin: 16px 0;
+}
+.main .plain-of-type{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0.1em 16px;
+    grid-gap: 16px;
+}
+.main .plain-of-type .basic li,
+.main .plain-of-type .pro li{
+    list-style: none;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding: 16px;
+    background-color: #f1f1f1;
+}
+.main .plain-of-type .basic li a,
+.main .plain-of-type .pro li a{
+    color: #000;
+    text-decoration: none;
+}
+.main .plain-of-type .basic .bc{
+    background-color: #616161;
+    color: #fff;
+    padding: 32px 16px;
+    font-size: 24px;
+}
+.main .plain-of-type .pro .pr{
+    background-color: #f44336;
+    color: #fff;
+    padding: 32px 16px;
+    font-size: 24px;
+}
+.main .plain-of-type .pro h2,
+.main .plain-of-type .basic h2{
+    margin: 10px 0;
+    font-size: 30px;
+    font-weight: 400;
+}
+.main .plain-of-type .pro span,
+.main .plain-of-type .basic span{
+    opacity: 0.60;
+}
+.main .plain-of-type .basic li:last-child,
+.main .plain-of-type .pro li:last-child{
+    padding: 40px 16px;
+    border-bottom: none;
+}
+.main .plain-of-type .basic li a{
+    background-color: #fff;
+    padding: 12px 24px;
+}
+.main .plain-of-type .basic li a:hover,
+.main .plain-of-type .pro li a:hover{
+    background-color: #000;
+    color: #fff;
+}
+.main .plain-of-type .pro li a{
+    background-color: #f44336;
+    color: #fff; 
+    padding: 12px 24px;
+}
+.main .contact form input[type=text]{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+.main .contact form section {
+    margin: 16px 0;
+}
+.main .contact form button{
+    background-color: #f44336;
+    color: #fff;
+    padding: 12px 24px;
+    margin-bottom: 16px;
+    width: 100%;
+    border: none;
+}
+.main .contact form button:hover{
+    background-color: #ccc;
+    color: #000;
+}
+.footer{
+    margin-top: 75px;
+    padding-right: 58px;
+    background-color: #f1f1f1;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    height:108px;
+}
+.footer p{
+    color: #000;
+    float: right;
+    margin: 16px 0;
+    padding-bottom: 16px;
+}
+.footer p a{
+    color: #000;
+}
+.footer p a:hover{
+    color:#616161;
+}
