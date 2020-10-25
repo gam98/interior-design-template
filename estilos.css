@@ -71,54 +71,81 @@
     margin: 20px 0;
     box-sizing: content-box;
 }
+
+.header__fixed{
+    display: none;
+}
 .grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 352px 237px 237px;
+    /* grid-template-rows: 352px 237px 237px; */
     grid-gap: 10px 18px;
     padding: 0.1em 16px;
+    
 }
 .grid .one-left{
-    grid-column: 1/2;
-    grid-row: 1/2;
-    background: url(img/kitchenconcrete.jpg) no-repeat center center/cover;
+    /* grid-column: 1/2;
+    grid-row: 1/2; */
     width: 100%;
     
 }
 .grid .two-left{
-    grid-column: 1/2;
-    grid-row: 2/3;
-    background: url(img/livingroom.jpg) no-repeat center center/cover;
+    /* grid-column: 1/2;
+    grid-row: 2/3; */
     width: 100%;
     
 }
 .grid .three-left{
-    grid-column: 1/2;
-    grid-row: 3/4;
-    background: url(img/diningroom.jpg) no-repeat center center/cover;
+    /* grid-column: 1/2;
+    grid-row: 3/4; */
     width: 100%;
     
 }
 .grid .one-right{
-    grid-column: 2/3;
-    grid-row: 1/2;
-    background: url(img/atrium.jpg) no-repeat center center/cover;
+    /* grid-column: 2/3;
+    grid-row: 1/2; */
     width: 100%;
     
 }
 .grid .two-right{
-    grid-column: 2/3;
-    grid-row: 2/3;
-    background: url(img/bedroom.jpg) no-repeat center center/cover;
+    /* grid-column: 2/3;
+    grid-row: 2/3; */
     width: 100%;
     
 }
 .grid .three-right{
-    grid-column: 2/3;
-    grid-row: 3/4;
-    background: url(img/livingroom2.jpg) no-repeat center center/cover;
+    /* grid-column: 2/3;
+    grid-row: 3/4; */
     width: 100%;
 }
+
+.grid .one-left,
+.grid .two-left,
+.grid .three-left,
+.grid .one-right,
+.grid .two-right,
+.grid .three-right{
+    opacity: 0.8;
+}
+.grid .one-left:hover{
+    opacity: 1;
+}
+.grid .two-left:hover{
+    opacity: 1;
+}
+.grid .three-left:hover{
+    opacity: 1;
+}
+.grid .one-right:hover{
+    opacity: 1;
+}
+.grid .two-right:hover{
+    opacity: 1;
+}
+.grid .three-right:hover{
+    opacity: 1;
+}
+
 .main .services,
 .main .designers,
 .main .packages,
@@ -288,4 +315,45 @@
 }
 .footer p a:hover{
     color:#616161;
+}
+@media screen and (max-width:768px){
+    .sidebar{
+        display: none;
+    }
+    .main{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .grid{
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 18px;
+    }
+    .header__fixed{
+        display: flex;
+        color: #fff;
+        align-items: center;
+        background-color: #f44336;
+        padding: 8px 16px;
+        font-size: 24px;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        top: 0;
+    }
+    .header__burger{
+        color: #fff;
+        margin-right: 16px;
+        padding: 8px 16px;
+    }
+    .header__burger:hover{
+        color: #000;
+        background-color: #ccc;
+    }
+}
+@media screen and (max-width:375px){
+    .grid,
+    .main .team-grid,
+    .main .plain-of-type{
+        grid-template-columns: 1fr;
+    }
 }
